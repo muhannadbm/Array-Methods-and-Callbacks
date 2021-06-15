@@ -50,12 +50,8 @@ Use the higher-order function called getYears to do the following:
 
 function getYears(array, getfinalsCB) {
     /* code here */
-    let years = [];
     const myarr = getfinalsCB(array);
-    
-    myarr.forEach(element => {
-        years.push(element.Year);
-    });
+    const years = myarr.map(element => element.Year);
     return years;
 
 }
